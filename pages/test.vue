@@ -3,7 +3,7 @@
     <h1>Test</h1>
     <nuxt-link to="/">home</nuxt-link>
     <nuxt-link to="/test">test</nuxt-link>
-    <div v-for="n in 30000" :key="n">
+    <div v-for="n in 30" :key="n">
       <component
         :is="n % 2 === 0 ? 'TestComponentThird' : 'TestComponentFourth'"
         :item="item"
@@ -12,9 +12,9 @@
   </div>
 </template>
 <style scoped>
-  h1{
-    font-size: 50px;
-  }
+h1 {
+  font-size: 50px;
+}
 </style>
 <script>
 export default {
